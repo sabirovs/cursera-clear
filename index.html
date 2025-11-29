@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matn O'chirish - Text Remover</title>
-    <meta name="description" content="Coursera xabarlarini avtomatik tozalash">
+    <meta name="description" content="Istalgan matnni avtomatik tozalash">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,14 +13,23 @@
     <div class="container">
         <div class="card">
             <h1>📝 Matn Tozalash</h1>
-            <p class="subtitle">Coursera xabarlarini avtomatik tozalash</p>
+            <p class="subtitle">Istalgan matndan keraksiz qismlarni olib tashlang</p>
 
             <div class="input-group">
                 <label for="mainText">
                     <span class="label-icon">📝</span>
-                    Matningizni kiriting
+                    Asosiy matningizni kiriting
                 </label>
-                <textarea id="mainText" placeholder="Bu yerga Coursera matnini kiriting..." rows="8"></textarea>
+                <textarea id="mainText" placeholder="Bu yerga asosiy matningizni kiriting..." rows="8"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="removeText">
+                    <span class="label-icon">🗑️</span>
+                    O'chirish kerak bo'lgan matn
+                </label>
+                <textarea id="removeText" placeholder="Bu yerga o'chirmoqchi bo'lgan matningizni kiriting..."
+                    rows="4"></textarea>
             </div>
 
             <button id="removeBtn" class="btn-primary">
